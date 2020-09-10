@@ -1,12 +1,10 @@
 public class Producto {
-    private  int idProducto;
+    private int idProducto;
     private String nombre;
-    private String lote;
 
-    public Producto(int idProducto, String nombre, String lote) {
-        this.idProducto = idProducto;
-        this.nombre = nombre;
-        this.lote = lote;
+    public Producto(int idProducto, String nombre) {
+        this.setIdProducto(idProducto);
+        this.setNombre(nombre);
     }
 
     public int getIdProducto() {
@@ -23,13 +21,5 @@ public class Producto {
 
     public void setNombre(String nombre) {
         this.nombre = nombre;
-    }
-
-    public String getLote() {
-        return lote;
-    }
-
-    public void setLote(String lote) {
-        this.lote = lote;
     }
 }

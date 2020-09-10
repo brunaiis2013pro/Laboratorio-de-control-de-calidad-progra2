@@ -1,69 +1,35 @@
-import java.util.Date;
+public class Ensayo {
+    private int idEnsayo;
+    private String codigo;
+    private Tipo tipo;
 
-public class Ensayo  {
-
-    private  String codigojefelab;
-
-    private  Control control;
-    private Certificado certificado;
-    private Muestra muestra;
-    private int cantidadEnsayos;
-    private String tipo;
-
-    public Ensayo(String codigojefelab, Control control, Certificado certificado, Muestra muestra, int cantidadEnsayos, String tipo) {
-        this.codigojefelab = codigojefelab;
-        this.control = control;
-        this.certificado = certificado;
-        this.muestra = muestra;
-        this.cantidadEnsayos = cantidadEnsayos;
-        this.tipo = tipo;
+    public Ensayo(int idEnsayo, String codigo, Tipo tipo) {
+        this.setIdEnsayo(idEnsayo);
+        this.setCodigo(codigo);
+        this.setTipo(tipo);
     }
 
-    public String getCodigojefelab() {
-        return codigojefelab;
+    public int getIdEnsayo() {
+        return idEnsayo;
     }
 
-    public void setCodigojefelab(String codigojefelab) {
-        this.codigojefelab = codigojefelab;
+    public void setIdEnsayo(int idEnsayo) {
+        this.idEnsayo = idEnsayo;
     }
 
-    public Control getControl() {
-        return control;
+    public String getCodigo() {
+        return codigo;
     }
 
-    public void setControl(Control control) {
-        this.control = control;
+    public void setCodigo(String codigo) {
+        this.codigo = codigo;
     }
 
-    public Certificado getCertificado() {
-        return certificado;
-    }
-
-    public void setCertificado(Certificado certificado) {
-        this.certificado = certificado;
-    }
-
-    public Muestra getMuestra() {
-        return muestra;
-    }
-
-    public void setMuestra(Muestra muestra) {
-        this.muestra = muestra;
-    }
-
-    public int getCantidadEnsayos() {
-        return cantidadEnsayos;
-    }
-
-    public void setCantidadEnsayos(int cantidadEnsayos) {
-        this.cantidadEnsayos = cantidadEnsayos;
-    }
-
-    public String getTipo() {
+    public Tipo getTipo() {
         return tipo;
     }
 
-    public void setTipo(String tipo) {
+    public void setTipo(Tipo tipo) {
         this.tipo = tipo;
     }
 }
